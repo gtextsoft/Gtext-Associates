@@ -27,6 +27,7 @@ body {
 body {
   position: relative;
   min-height: 100vh;
+  animation: page-enter 720ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .page-bg {
@@ -127,14 +128,34 @@ body {
 }
 
 .site-nav a {
+  position: relative;
   color: var(--muted);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
+  transition: color 260ms ease;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.38rem;
+  width: 100%;
+  height: 2px;
+  background: var(--gold-strong);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 240ms ease;
 }
 
 .site-nav a:hover {
   color: var(--text);
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after {
+  transform: scaleX(1);
 }
 
 .site-nav a.active {
@@ -173,6 +194,12 @@ body {
   text-decoration: none;
   font-weight: 700;
   border: 1px solid transparent;
+  transition:
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 280ms ease,
+    background-color 280ms ease,
+    border-color 280ms ease,
+    color 280ms ease;
 }
 
 .btn-gold {
@@ -182,7 +209,8 @@ body {
 }
 
 .btn-gold:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(179, 18, 47, 0.28);
 }
 
 .btn-outline {
@@ -213,6 +241,7 @@ body {
   background:
     linear-gradient(to top, rgba(43, 17, 22, 0.28), rgba(43, 17, 22, 0.06)),
     url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=80") center / cover no-repeat;
+  animation: hero-drift 14s ease-in-out infinite alternate;
 }
 
 .page-hero {
@@ -352,6 +381,7 @@ h3 {
   background: var(--surface-soft);
   border-radius: 14px;
   padding: 1rem 1.1rem;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms ease;
 }
 
 .center {
@@ -371,6 +401,7 @@ h3 {
   border-radius: 14px;
   background: var(--surface);
   padding: 1.1rem;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms ease, border-color 320ms ease;
 }
 
 .service-card p {
@@ -387,6 +418,7 @@ h3 {
   border-radius: 16px;
   border: 1px solid var(--line);
   background: var(--surface);
+  transition: transform 340ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 340ms ease, border-color 340ms ease;
 }
 
 .property-image {
@@ -436,6 +468,7 @@ h3 {
   background: var(--surface);
   border-radius: 14px;
   padding: 1.15rem;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms ease;
 }
 
 .event-meta {
@@ -471,6 +504,7 @@ h3 {
   border-radius: 18px;
   padding: 1.4rem;
   box-shadow: var(--shadow);
+  transition: transform 340ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 340ms ease;
 }
 
 .testimonial p {
@@ -495,6 +529,73 @@ h3 {
   padding: 1rem;
   display: grid;
   gap: 0.8rem;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms ease;
+}
+
+.service-card:hover,
+.property-card:hover,
+.about-points article:hover,
+.event-card:hover,
+.testimonial:hover,
+.contact-form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(179, 18, 47, 0.14);
+}
+
+.property-card:hover .property-image {
+  transform: scale(1.04);
+}
+
+.property-image {
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px) scale(0.985);
+  transition:
+    opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-drift {
+  from {
+    background-position: center 46%;
+  }
+  to {
+    background-position: center 54%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 .contact-form label {
