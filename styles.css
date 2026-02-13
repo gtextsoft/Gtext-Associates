@@ -127,13 +127,10 @@ body {
 }
 
 .logo-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
+  height: 48px;
+  display: flex;
+  align-items: center;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(143, 188, 209, 0.2);
 }
 
 .logo-mark img {
