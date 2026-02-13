@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gtext & Associates | Dubai-Inspired Real Estate</title>
-  <meta name="description" content="Gtext & Associates premium real estate advisory and wealth-building platform, redesigned with a luxury Dubai-inspired experience.">
+  <meta name="description"
+    content="Gtext & Associates premium real estate advisory and wealth-building platform, redesigned with a luxury Dubai-inspired experience.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self' https://formspree.io;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
+
 <body>
   <div class="page-bg"></div>
 
   <div class="topbar">
     <div class="container topbar-wrap">
-      <span><a href="mailto:info@gtextandassociates.com">info@gtextandassociates.com</a> | 25A, Lola Holloway Street, Lagos</span>
+      <span><a href="mailto:info@gtextandassociates.com">info@gtextandassociates.com</a> | 25A, Lola Holloway Street,
+        Lagos</span>
       <div class="topbar-links">
         <a href="./contact.html">Register Onboarding</a>
       </div>
@@ -25,7 +37,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="./index.html" class="logo">
-        <span class="logo-mark">GA</span>
+        <span class="logo-mark"><img src="./images/ga-logo.webp" alt="Gtext Logo"></span>
         <span class="logo-text">Gtext & Associates</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
@@ -47,58 +59,81 @@
       <div class="hero-image" aria-label="Luxury real estate hero image"></div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-main-intro">
+      <div class="container center">
+        <p class="eyebrow">Welcome to Gtext & Associates</p>
+        <h1>Partner With Us to Become a Billionaire Realtor</h1>
+        <p class="lead center" style="margin: 0 auto 2rem;">
+          We provide world-class training and premium properties to help you succeed in real estate. Architecting wealth
+          across the globe's most lucrative markets.
+        </p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="https://gtextandassociates.com/portal/registration" class="btn btn-brand">Join Our Program</a>
+          <a href="#properties" class="btn btn-outline">View Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="about">
       <div class="container about-grid">
         <div>
-          <p class="eyebrow">About Gtext & Associates</p>
-          <h2>The Leading Real Estate Training Firm</h2>
+          <p class="eyebrow">The Leading Real Estate Training Firm</p>
+          <h2>Creating Financial Freedom</h2>
           <p>
-            As a subsidiary of GText Holdings, we are passionate about creating financial freedom through
-            real estate. Our mission is to train 100,000+ associates annually to achieve billionaire status.
+            As a premier subsidiary of GText Holdings, we are passionate about creating financial freedom through real
+            estate. Our mission is to train 100,000+ associates annually to achieve billionaire status.
           </p>
-          <a href="./about.html" class="btn btn-ghost">Read Full Story</a>
+          <p>
+            We bridge the gap between your ambition and billionaire-status real estate assets. Join the elite network of
+            Gtext & Associates.
+          </p>
+          <a href="./about.html" class="btn btn-outline">Read Full Story</a>
         </div>
         <div class="about-points">
           <article>
+            <span class="eyebrow" style="font-size: 0.65rem;">Practical Training</span>
             <h3>Property Inspection</h3>
-            <p>Hands-on practical sessions with real assets so associates learn with confidence.</p>
+            <p>Hands-on training with actual properties, ensuring you learn with confidence and market clarity.</p>
           </article>
           <article>
-            <h3>Practical Training</h3>
-            <p>Learn directly from seasoned experts and active market leaders.</p>
+            <span class="eyebrow" style="font-size: 0.65rem;">Expert Guidance</span>
+            <h3>Billionaire Mentorship</h3>
+            <p>Learn directly from industry experts and seasoned market leaders dedicated to your growth.</p>
           </article>
           <article>
+            <span class="eyebrow" style="font-size: 0.65rem;">Execution</span>
             <h3>The Billionaire Code</h3>
-            <p>Hard work, smart work, and network-driven execution for accelerated growth.</p>
+            <p>Hard work, Smart work, and an Unbreakable Network. We don't just sell property; we engineer fortunes.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="services">
       <div class="container">
-        <p class="eyebrow center">What We Offer</p>
-        <h2 class="center">How We Help You Succeed</h2>
+        <p class="eyebrow center">How We Help You Succeed</p>
+        <h2 class="center">Comprehensive Real Estate Solutions</h2>
         <div class="card-grid">
           <article class="service-card">
             <h3>Property Acquisition</h3>
-            <p>Source premium apartments, villas, and branded residences in prime zones.</p>
+            <p>Source premium apartments, villas, and branded residences in the world's most prime zones.</p>
           </article>
           <article class="service-card">
             <h3>Investment Opportunities</h3>
-            <p>High-return investment plans with professional support and clear strategy.</p>
+            <p>High-return investment plans supported by professional advisory and clear execution strategies.</p>
           </article>
           <article class="service-card">
             <h3>Realtor Training</h3>
-            <p>Become a certified realtor through intensive coaching and mentorship.</p>
+            <p>Become a certified billionaire realtor through intensive coaching, mentorship, and practical exposure.
+            </p>
           </article>
           <article class="service-card">
             <h3>Property Management</h3>
-            <p>End-to-end support for performance tracking, tenant value, and portfolio growth.</p>
+            <p>End-to-end support for performance tracking, tenant value, and portfolio optimization.</p>
           </article>
         </div>
         <p class="center" style="margin-top: 1.3rem;">
-          <a href="./services.html" class="btn btn-gold">See All Services</a>
+          <a href="./services.html" class="btn btn-brand">See All Services</a>
         </p>
       </div>
     </section>
@@ -111,50 +146,92 @@
           <article class="property-card">
             <div class="property-image one"></div>
             <div class="property-body">
-              <h3>Luxury 4-Bedroom Terrace Duplex</h3>
-              <p>Life Camp, Abuja. Certificate of Occupancy and all bedrooms en-suites.</p>
-              <div class="property-meta"><span>NGN 250,000,000</span><span>4 Beds</span></div>
+              <span class="eyebrow">Signature Collection</span>
+              <h3>The Sapphire Sky Villa</h3>
+              <p>Business Bay, Dubai. A masterpiece of modern architecture with private infinity pool.</p>
+              <div class="property-meta"><span>From AED 4,500,000</span><span>5 Beds</span></div>
             </div>
           </article>
           <article class="property-card">
             <div class="property-image two"></div>
             <div class="property-body">
-              <h3>Invest in Dubai's Skyhall</h3>
-              <p>Business Bay, Dubai with luxury amenities and flexible payment plan.</p>
-              <div class="property-meta"><span>From AED 1,750,000</span><span>1 Bedroom</span></div>
+              <span class="eyebrow">Branded Residences</span>
+              <h3>BGC Residences | Marina View</h3>
+              <p>Dubai Marina. Fully furnished luxury apartments with 24/7 concierge service.</p>
+              <div class="property-meta"><span>From AED 2,200,000</span><span>2 Beds</span></div>
             </div>
           </article>
           <article class="property-card">
             <div class="property-image three"></div>
             <div class="property-body">
-              <h3>Commercial Growth Asset</h3>
-              <p>High-visibility mixed-use investment option for serious portfolio expansion.</p>
-              <div class="property-meta"><span>By Request</span><span>Commercial</span></div>
+              <span class="eyebrow">Premium Estates</span>
+              <h3>The Royal Oasis Mantion</h3>
+              <p>Emirates Hills. An exclusive sanctuary of privacy and unparalleled sophistication.</p>
+              <div class="property-meta"><span>Price Upon Request</span><span>7 Beds</span></div>
             </div>
           </article>
         </div>
         <p class="center" style="margin-top: 1.3rem;">
-          <a href="./properties.html" class="btn btn-gold">View Properties Page</a>
+          <a href="./properties.html" class="btn btn-brand">View Portfolio</a>
         </p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-dark" style="background: var(--text); color: #fff;">
+      <div class="container dual-feature">
+        <div class="feature-image-container">
+          <img src="./images/modern_dubai_apartment_exterior_1770977763338.png" alt="Modern Dubai Apartment"
+            style="width: 100%; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
+        </div>
+        <div class="feature-text">
+          <p class="eyebrow" style="color: var(--gold-strong);">Modern Dubai Living</p>
+          <h2 style="color: #fff;">The Future of Living is Here</h2>
+          <p style="opacity: 0.8; font-size: 1.1rem; line-height: 1.6;">
+            Discover residences that redefine the concept of home. From the sleek glass facades of Business Bay to the
+            tranquil waters of Dubai Marina, our portfolio represents the peak of global architectural achievement.
+          </p>
+          <ul class="luxury-perks" style="list-style: none; padding: 0; margin: 1.5rem 0;">
+            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem;">
+              <span style="color: var(--gold-strong);">✦</span> Smart Home Integration
+            </li>
+            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem;">
+              <span style="color: var(--gold-strong);">✦</span> Private Infinity Pools
+            </li>
+            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem;">
+              <span style="color: var(--gold-strong);">✦</span> World-Class Amenities
+            </li>
+          </ul>
+          <a href="./contact.html" class="btn btn-brand">Schedule a Private Tour</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="training">
       <div class="container why-grid">
         <div>
-          <p class="eyebrow">Upcoming Events</p>
-          <h2>Real Estate Training Programs</h2>
-          <ul class="benefits">
-            <li>6 Months Sales Internship in Real Estate (full-time practical track).</li>
-            <li>Sessions run 8:00 AM - 5:00 PM with active field exposure.</li>
-            <li>Locations: Lagos (Omole, Ibeju-Lekki, Ikoyi), Abuja, Port Harcourt, Dubai, London, Houston.</li>
-            <li>Interested candidates submit CV + one-minute intro video via WhatsApp.</li>
+          <p class="eyebrow">Real Estate Training Programs</p>
+          <h2>6 Months Sales Internship</h2>
+          <p>Ready to undergo 3 - 6 months full-time Training? We are looking for candidates who are hungry to learn,
+            vibrant, and ready to achieve massive results in the global market.</p>
+          <ul class="benefits" style="margin-top: 1.5rem;">
+            <li><strong>Hungry & Vibrant:</strong> Designed for high-energy individuals ready to scale.</li>
+            <li><strong>Global Training:</strong> Modules available in Lagos, Abuja, Dubai, London, and Houston.</li>
+            <li><strong>Direct Results:</strong> Learn the systems that create billionaire realtors.</li>
           </ul>
-          <a href="./events.html" class="btn btn-gold">Apply for Training</a>
+          <p style="margin-top: 1.2rem;">Interested candidates: Take the first step toward your new career.</p>
+          <a href="https://wa.me/+2348138550318" class="btn btn-brand">Apply via WhatsApp</a>
         </div>
         <div class="testimonial">
-          <p>"The Billionaire Code: Hard work, Smart work, and Network."</p>
-          <h4>- Dr. Stephen Akintayo</h4>
+          <div style="font-size: 2rem; color: var(--gold-strong); margin-bottom: 1rem;">“</div>
+          <p style="font-style: italic; font-weight: 600;">"The Billionaire Code is simple: Hard work, Smart work, and
+            an Unbreakable Network. We don't just sell property; we engineer fortunes."</p>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: var(--gold); border-radius: 50%;"></div>
+            <div>
+              <h4 style="margin: 0;">Dr. Stephen Akintayo</h4>
+              <p style="margin: 0; font-size: 0.8rem; color: var(--muted);">Founder, GText Holdings</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -164,7 +241,8 @@
         <div>
           <p class="eyebrow">Let's Build Your Portfolio</p>
           <h2>Book a Private Consultation Today</h2>
-          <p>Have questions about our services or properties? Reach out to our team and start your real estate journey today.</p>
+          <p>Have questions about our services or properties? Reach out to our team and start your real estate journey
+            today.</p>
         </div>
         <form class="contact-form">
           <label>
@@ -182,13 +260,13 @@
           <label>
             Focus Area
             <select name="budget">
-              <option>Property Acquisition</option>
-              <option>Investment Plans</option>
-              <option>Realtor Training</option>
-              <option>Property Inspection</option>
+              <option>Billionaire Realtor Training</option>
+              <option>Premium Property Acquisition</option>
+              <option>Off-Plan Investment Plans</option>
+              <option>VIP Property Inspection</option>
             </select>
           </label>
-          <button type="submit" class="btn btn-gold">Request Callback</button>
+          <button type="submit" class="btn btn-brand">Request VIP Callback</button>
         </form>
       </div>
     </section>
@@ -199,6 +277,7 @@
       <p>© 2026 Gtext & Associates. All rights reserved.</p>
       <div>
         <span>+234 813 591 5169</span>
+        <span>25A, Lola Holloway Street, Omole Phase One, Lagos</span>
         <span>info@gtextandassociates.com</span>
       </div>
     </div>
@@ -206,4 +285,5 @@
 
   <script src="./script.js"></script>
 </body>
+
 </html>
